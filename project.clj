@@ -1,12 +1,12 @@
 (def jruby-version "9.4.8.0")
 
-(defproject puppetlabs/jruby-deps "9.4.8.0-2-SNAPSHOT"
+(defproject org.openvoxproject/jruby-deps "9.4.8.0-2-SNAPSHOT"
   :description "JRuby dependencies"
-  :url "https://github.com/puppetlabs/jruby-deps"
+  :url "https://github.com/openvoxproject/jruby-deps"
   :license {:name "Apache License, Version 2.0"
             :url "http://www.apache.org/licenses/LICENSE-2.0"}
 
-  :parent-project {:coords [puppetlabs/clj-parent "7.3.14"]
+  :parent-project {:coords [org.openvoxproject/clj-parent "7.4.1-SNAPSHOT"]
                    :inherit [:managed-dependencies]}
 
   :min-lein-version "2.7.1"
@@ -17,9 +17,9 @@
                  [org.jruby/jruby-stdlib ~jruby-version]
                  [org.snakeyaml/snakeyaml-engine "2.7"]]
 
-  :deploy-repositories [["releases" {:url "https://clojars.org/repo"
-                                     :username :env/clojars_jenkins_username
-                                     :password :env/clojars_jenkins_password
+  :deploy-repositories [["clojars" {:url "https://clojars.org/repo"
+                                     :username :env/CLOJARS_USERNAME
+                                     :password :env/CLOJARS_PASSWORD
                                      :sign-releases false}]]
 
   :plugins [[lein-release-4digit-version "0.2.0"]]
