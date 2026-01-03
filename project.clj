@@ -1,12 +1,12 @@
-(def jruby-version "9.4.8.0")
+(def jruby-version "9.4.14.0")
 
-(defproject org.openvoxproject/jruby-deps "9.4.8.0-4-SNAPSHOT"
+(defproject org.openvoxproject/jruby-deps "9.4.14.0-1-SNAPSHOT"
   :description "JRuby dependencies"
   :url "https://github.com/openvoxproject/jruby-deps"
   :license {:name "Apache License, Version 2.0"
             :url "http://www.apache.org/licenses/LICENSE-2.0"}
 
-  :parent-project {:coords [org.openvoxproject/clj-parent "7.5.1"]
+  :parent-project {:coords [org.openvoxproject/clj-parent "7.6.1"]
                    :inherit [:managed-dependencies]}
 
   :min-lein-version "2.7.1"
