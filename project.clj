@@ -6,7 +6,7 @@
   :license {:name "Apache License, Version 2.0"
             :url "http://www.apache.org/licenses/LICENSE-2.0"}
 
-  :parent-project {:coords [org.openvoxproject/clj-parent "7.6.4"]
+  :parent-project {:coords [org.openvoxproject/clj-parent "7.6.6"]
                    :inherit [:managed-dependencies]}
 
   :min-lein-version "2.7.1"
