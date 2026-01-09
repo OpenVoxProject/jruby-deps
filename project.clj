@@ -12,7 +12,7 @@
 
   :dependencies [[org.jruby/jruby-base ~jruby-version :exclusions [joda-time]]
                  [org.jruby/jruby-stdlib ~jruby-version]
-                 [org.snakeyaml/snakeyaml-engine "2.10"]]
+                 [org.snakeyaml/snakeyaml-engine "3.0.1"]]
 
   :deploy-repositories [["releases" {:url "https://clojars.org/repo"
                                      :username :env/CLOJARS_USERNAME
