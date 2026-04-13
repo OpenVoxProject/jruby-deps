@@ -10,7 +10,7 @@
 
   :pedantic? :abort
 
-  :dependencies [[org.jruby/jruby-base ~jruby-version :exclusions [joda-time]]
+  :dependencies [[org.jruby/jruby-base ~jruby-version]
                  [org.jruby/jruby-stdlib ~jruby-version]
                  [org.snakeyaml/snakeyaml-engine "2.10"]]
 
