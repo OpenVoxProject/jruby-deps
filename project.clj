@@ -1,6 +1,6 @@
 (def jruby-version "9.4.15.0")
 
-(defproject org.openvoxproject/jruby-deps "9.4.15.0-2-SNAPSHOT"
+(defproject org.openvoxproject/jruby-deps "10.0.6.0-1-SNAPSHOT"
   :description "JRuby dependencies"
   :url "https://github.com/openvoxproject/jruby-deps"
   :license {:name "Apache License, Version 2.0"
