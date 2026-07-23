@@ -13,7 +13,7 @@
     {
       "groupName": "jruby updates",
       "allowedVersions": "<10.1",
-      "matchBaseBranches": "10.0.x",
+      "matchBaseBranches": ["10.0.x"],
       "matchPackageNames": [
         "org.jruby:*"
       ]
@@ -23,7 +23,7 @@
     {
       "groupName": "jruby updates",
       "allowedVersions": "<10.0",
-      "matchBaseBranches": "9.4.x",
+      "matchBaseBranches": ["9.4.x"],
       "matchPackageNames": [
         "org.jruby:*"
       ]
