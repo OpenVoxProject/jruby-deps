@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "baseBranchPatterns": ["main", "9.4.x"],
+  "baseBranchPatterns": ["main", "10.0.x", "9.4.x"],
   "addLabels": ["renovate", "dependencies"],
   "assigneesFromCodeOwners": true,
   "automerge": true,
@@ -9,15 +9,17 @@
   "enabledManagers": ["leiningen"],
 
   "packageRules": [
+    // Lock JRuby to the 10.0.x release series for the 10.0.x branch (MRI 3.4).
     {
       "groupName": "jruby updates",
       "allowedVersions": "<10.1",
+      "matchBaseBranches": "10.0.x",
       "matchPackageNames": [
         "org.jruby:*"
       ]
     },
 
-    // Lock JRuby to the 9.4 release series for the 9.4.x branch.
+    // Lock JRuby to the 9.4 release series for the 9.4.x branch (MRI 3.1).
     {
       "groupName": "jruby updates",
       "allowedVersions": "<10.0",
