@@ -7,10 +7,22 @@ permissions:
 
 on:
   workflow_dispatch:
-
+    inputs:
+      branch:
+        description: 'The branch to release from.'
+        type: choice
+        options:
+          - main
+          - '10.0.x'
+          - '9.4.x'
+          - '9.3.x'
+          - '9.2.x'
+        default: 'main'
 jobs:
   release:
     uses: 'openvoxproject/shared-actions/.github/workflows/clojure_release.yml@main'
+    with:
+      base-branch: ${{ inputs.branch }}
     secrets:
       github_pat: ${{ secrets.OPENVOXBOT_COMMIT_AND_PRS }}
       ssh_private_key: ${{ secrets.OPENVOXBOT_SSH_PRIVATE_KEY }}
