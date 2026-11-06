@@ -1,4 +1,4 @@
-(def jruby-version "10.0.7.0")
+(def jruby-version "10.0.8.0")
 
 (defproject org.openvoxproject/jruby-deps "10.0.7.0-2-SNAPSHOT"
   :description "JRuby dependencies"
